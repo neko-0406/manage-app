@@ -1,0 +1,9 @@
+div.top-menu-bar {
+    width: 100%;
+    height: 30px;
+    border: 1px solid black;
+    /*background-color: var(--apple-900);*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
