@@ -4,16 +4,20 @@ import MainContent from './components/MainContent';
 
 import './App.css'
 import './styles/Color.css'
+import SideMenuBar from './components/SideMenuBar';
+import { AppProvider } from './contexts/AppContext';
 
 function App() {
   return (
-    <div className="main-root">
-      <TopMenuBar />
-      <MainContent>
-        <div></div>
-      </MainContent>
-      <StatusBar />
-    </div>
+    <AppProvider>
+      <div className="main-root">
+        <TopMenuBar />
+        <MainContent>
+          <SideMenuBar />
+        </MainContent>
+        <StatusBar />
+      </div>
+    </AppProvider>
   );
 }
 

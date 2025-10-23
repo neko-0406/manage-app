@@ -1,0 +1,5 @@
+div.side-menu-bar {
+    height: calc(100%);
+    width: 48px;
+    border: 1px solid black;
+}
